@@ -1,0 +1,6 @@
+<form class="form" (ngSubmit)="onSubmit()">
+    <!-- [(ngModel)] 'binds' a input to a property of the component-->
+    <!-- to use ngModel we need to added to the app.module.ts -->
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo...">
+    <input type="submit" value="Submit" class="btn">
+</form>

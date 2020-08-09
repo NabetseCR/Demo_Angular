@@ -1,0 +1,12 @@
+<!-- ngFor is like a embedded for each of angular -->
+<!-- I'm goint to call all the todo items I have -->
+<!-- [todo]="todo" needs an import Input from the component -->
+<!-- In this case todo-item -->
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<app-todo-item 
+ *ngFor="let todo of todos" 
+ [todo]="todo"
+ (deleteTodo)="deleteTodo($event)"
+>
+</app-todo-item>
+
